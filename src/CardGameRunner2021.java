@@ -3,6 +3,8 @@ public class CardGameRunner2021
     public static void main(String[] args)
     {
         Referee ref = new Referee();
+        Player p1 = new Player();
+        Player p2 = new Player();
 
         /*
         // Create and print two cards
