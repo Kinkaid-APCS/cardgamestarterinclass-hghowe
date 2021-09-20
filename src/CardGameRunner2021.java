@@ -2,6 +2,9 @@ public class CardGameRunner2021
 {
     public static void main(String[] args)
     {
+        Referee ref = new Referee();
+
+        /*
         // Create and print two cards
         Card one = new Card();
         Card two = new Card(" 2",2,"Spades");
@@ -39,7 +42,7 @@ public class CardGameRunner2021
             System.out.println(i + "-->\t" + temp+"\t value: "+temp.getValue());
         }
         System.out.println("Remainder of deck: \n"+deck);
-
+*/
     }
 
 }
