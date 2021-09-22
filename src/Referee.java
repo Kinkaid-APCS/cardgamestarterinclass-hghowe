@@ -11,18 +11,29 @@ public class Referee
         System.out.println("Made deck with "+deck.size()+" cards.");
     }
 
+    /**
+     * Gives 26 cards to each player.
+     */
     public void dealCards()
     {
 
 
     }
 
+    /**
+     * Create a new deck of 52 cards;
+     * remove all the cards from the players; empty the pool
+     */
     public void resetGame()
     {
 
 
     }
 
+    /**
+     * runs the game loop, asking players for cards, comparing them,
+     * and giving cards back to the victors until the game is over.
+     */
     public void playGame()
     {
 
