@@ -4,10 +4,10 @@ public class Player
     private String name;
 
 
-    public Player()
+    public Player(String n)
     {
-
-
+        myCards = new CardPile();
+        name = n;
     }
 
     /**

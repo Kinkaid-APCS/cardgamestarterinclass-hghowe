@@ -4,11 +4,13 @@ public class Referee
     private CardPile deck, pool;
     private Player player1, player2;
 
-    public Referee()
+    public Referee(Player p1, Player p2)
     {
         whoseTurn = 1;
         deck = CardPile.makeDeck(CardPile.ACE_HIGH);
         System.out.println("Made deck with "+deck.size()+" cards.");
+        player1 = p1;
+        player2 = p2;
     }
 
     /**

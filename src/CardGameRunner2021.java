@@ -1,10 +1,20 @@
+import java.util.Scanner;
+
 public class CardGameRunner2021
 {
     public static void main(String[] args)
     {
-        Referee ref = new Referee();
-        Player p1 = new Player();
-        Player p2 = new Player();
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Player 1, what is your name? ");
+        String name1 = keyboard.nextLine();
+        Player p1 = new Player(name1);
+        System.out.print("Player 2, what is your name? ");
+        String name2 = keyboard.nextLine();
+        Player p2 = new Player(name2);
+        Referee ref = new Referee(p1,p2);
+
+        ref.dealCards();
+        ref.playGame();
 
         /*
         // Create and print two cards
