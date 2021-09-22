@@ -17,8 +17,8 @@ public class Player
      */
     public void takeCardsAndShuffle(CardPile cardsToTake)
     {
-
-
+        cardsToTake.shuffle();
+        myCards.takeAllCardsFromPile(cardsToTake);
     }
 
     /**
@@ -27,8 +27,8 @@ public class Player
      */
     public Card getTopCard()
     {
-
-        return null; // temporary code
+        Card dealtCard = myCards.dealCard();
+        return dealtCard;
     }
 
     /**
@@ -39,8 +39,11 @@ public class Player
      */
     public CardPile get3Cards()
     {
-
-        return null; // temporary code
+        CardPile cp = new CardPile();
+        for (int i=0; i<3; i++)
+            if (myCards.hasCard())
+                cp.addCard(myCards.dealCard());
+        return cp;
     }
 
     /**
@@ -49,11 +52,11 @@ public class Player
      */
     public int getNumCards()
     {
-        return -1;  // temporary code
+        return myCards.size();
     }
 
     public String getName()
     {
-        return null; // temporary code
+        return name;
     }
 }
