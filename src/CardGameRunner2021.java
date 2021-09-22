@@ -16,6 +16,22 @@ public class CardGameRunner2021
         ref.dealCards();
         ref.playGame();
 
+        System.out.println("--------- temp stuff");
+        Player testP = new Player("Testy");
+        System.out.println(testP.getName());
+        System.out.println(testP.getNumCards());
+        CardPile testPile = new CardPile();
+        testPile.addCard(new Card());
+        testP.takeCardsAndShuffle(testPile);
+        System.out.println("Now I have "+testP.getNumCards()+" cards.");
+        System.out.println("getting card from "+testP.getName());
+        System.out.println(testP.getTopCard());
+
+
+
+
+
+
         /*
         // Create and print two cards
         Card one = new Card();
